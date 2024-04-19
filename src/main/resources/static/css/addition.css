@@ -1,0 +1,31 @@
+/* Style for the Home Button */
+#heading form:nth-child(1) button {
+    background-color: #3490dc; /* Blue */
+    color: #ffffff; /* White */
+    padding: 8px 16px; /* Adjust padding as needed */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#heading form:nth-child(1) button:hover,
+#heading form:nth-child(1) button:focus {
+    background-color: #2779bd; /* Darker blue on hover/focus */
+}
+
+/* Style for the Delete All Entries Button */
+#heading form:nth-child(2) button {
+    background-color: #e3342f; /* Red */
+    color: #ffffff; /* White */
+    padding: 8px 16px; /* Adjust padding as needed */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#heading form:nth-child(2) button:hover,
+#heading form:nth-child(2) button:focus {
+    background-color: #cc1f1a; /* Darker red on hover/focus */
+}

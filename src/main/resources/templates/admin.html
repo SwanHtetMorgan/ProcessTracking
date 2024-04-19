@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern UI</title>
+    <style>
+        body {
+            background: #34495e;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+        }
+
+        .sidebar {
+            width: 250px;
+            height: 100vh;
+            background-color: #131315;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-right: 1px solid #34495e; /* Vertical line */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            z-index: 1;
+        }
+
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+        }
+
+        .sidebar ul li {
+            margin-bottom: 10px;
+        }
+
+        .sidebar ul li a {
+            display: block;
+            padding: 15px 20px;
+            color: #fff;
+            text-decoration: none;
+            border:  2px solid cyan;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            text-align: center;
+        }
+
+        .sidebar ul li a:hover {
+            background-color: #ec8e53;
+        }
+
+        .content {
+            flex: 1;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="sidebar">
+    <ul>
+        <li><a href="#">Student List</a></li>
+        <li><a href="#">Instructor List</a></li>
+        <li><a href="#">Admin List</a></li>
+        <li><a href="#">Permissions</a></li>
+        <li><a href="#">Student List</a></li>
+        <li><a href="#">Instructor List</a></li>
+        <li><a href="#">Admin List</a></li>
+        <li><a href="#">Permissions</a></li>
+        <li><a href="#">Student List</a></li>
+        <li><a href="#">Instructor List</a></li>
+        <li><a href="#">Admin List</a></li>
+        <li><a href="#">Permissions</a></li>
+
+    </ul>
+</div>
+<div class="content">
+    <!-- Main content related to the selected button goes here -->
+</div>
+</body>
+</html>

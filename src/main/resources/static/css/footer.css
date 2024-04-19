@@ -1,0 +1,20 @@
+/* styles.css */
+
+#foot-container {
+    background-color: #333; /* Background color of the footer */
+    color: #fff; /* Text color */
+    padding: 20px; /* Padding around the content */
+}
+
+.footerId {
+    margin: 5px 0; /* Margin between paragraphs */
+}
+
+.footerId a {
+    color: #fff; /* Text color of links */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.footerId a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}

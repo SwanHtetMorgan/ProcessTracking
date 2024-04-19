@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" >
+<head>
+    <meta charset="UTF-8">
+    <title>To-Do List</title>
+    <link href="/css/output.css" rel="stylesheet" type="text/css">
+    <link href="/css/styles.css" rel="stylesheet" type="text/css">
+</head>
+<body id="body" class=" relative">
+<header class="bg-cyan-400 py-4 px-6 shadow-md">
+    <div class="text-right  min-h-screen m-1">
+        <form action="/addition">
+            <button type="submit" class="custom-button">READ</button>
+        </form>
+        <form action="/table">
+            <button type="submit" class="custom-button">TASKS</button>
+        </form>
+    </div>
+</header>
+<!--<div th:replace="~{header :: header}"></div>-->
+<div>
+<div class="bg-gray-200 py-4 px-4 text-center relative min-h-96">
+    <div class="min-h-screen flex justify-center items-center">
+        <h1 class="text-3xl text-violet-50">Employee && Task Creation</h1>
+    </div>
+    <br><br>
+    <form class="flex flex-col justify-center items-center space-y-4" th:action="@{/add}" method="post">
+        <label>
+            <input class="text-2xl text-center text-amber-600 border border-gray-300 rounded-lg px-4 py-2" type="text" name="employeeName" placeholder="Enter EmployeeName">
+        </label>
+        <label>
+            <input class="text-2xl text-center text-amber-600 border border-gray-300 rounded-lg px-4 py-2" type="datetime-local" name="date" placeholder="Date and time">
+        </label>
+        <label>
+            <input class="text-2xl text-center text-amber-600 border border-gray-300 rounded-lg px-4 py-2" type="text" name="description" placeholder="Enter Job Position">
+        </label>
+        <label>
+            <input class="text-2xl text-center text-amber-600 border border-gray-300 rounded-lg px-4 py-2" type="text" name="task" placeholder="Enter the task ">
+        </label>
+        <button type="submit" class="custom-button">Create</button>
+    </form>
+</div>
+</div>
+
+<br><br><br>
+<div class="text-center  min-h-screen m-1">
+    <form action="/tasks">
+        <button type="submit" class="custom-button">Task Creator</button>
+    </form>
+    <br>
+    <br>
+    <form action="/table">
+        <button type="submit" class="custom-button">Tasks In Target</button>
+    </form>
+</div>
+<div th:replace="~{footer :: footer}"></div>
+</body>
+</html>

@@ -1,0 +1,79 @@
+#body{
+    background: dimgrey;
+    min-height: 100vh;
+}
+.custom-button {
+    background-color: #3490dc; /* Blue background color */
+    color: #ffffff; /* White text color */
+    padding: 8px 16px; /* Padding of 8px top and bottom, 16px left and right */
+    border-radius: 4px; /* Rounded corners */
+    border: none; /* Remove default button border */
+    cursor: pointer; /* Show pointer cursor on hover */
+    margin-right: 8px; /* Add some space between buttons */
+}
+
+.custom-button:hover {
+    background-color: #2779bd; /* Darker blue background color on hover */
+}
+/* Table */
+#todo-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Table header */
+#todo-table th {
+    padding: 8px 16px;
+    background-color: #cbd5e0;
+    border-bottom: 2px solid #a0aec0;
+    text-align: left;
+}
+
+/* Table body */
+#todo-table td {
+    padding: 8px 16px;
+    border-bottom: 1px solid #a0aec0;
+}
+
+/* Hover effect */
+#todo-table tr:hover {
+    background-color: #edf2f7;
+}
+
+/* Strikethrough effect for completed tasks */
+.completed-task {
+    text-decoration: line-through;
+}
+#footer-container {
+    background-color: #f0f0f0;
+    bottom:  0 ;
+    position: absolute;/* Background color for the footer container */
+    padding: 20px; /* Padding around the footer content */
+    text-align: center;
+    height: 200px;
+    margin-top: -200px;/* Center align the content */
+}
+
+footer{
+    position:  absolute;
+    bottom:  0;
+    left:  0;
+    width:  100%;
+    min-height: 5rem;
+    background: #f4f4f4;
+}
+footer p {
+    text-align: left ;
+
+    font-size: 16px; /* Font size for the paragraph */
+    margin-borttom: 10px; /* Bottom margin for the paragraph */
+}
+
+footer a {
+    color: #5858d5; /* Color for the anchor text */
+    text-decoration: none; /* Remove underline from anchor text */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Underline anchor text on hover */
+}
